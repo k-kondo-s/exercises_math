@@ -1,0 +1,183 @@
+<DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Math Exercises</title>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+      processEscapes: true
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    }
+  });
+  </script>
+  <script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript"></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+  <script type="text/javascript">
+    // Setup MathJax
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+      TeX: {
+        TagSide: "left"
+        equationNumbers: {
+          autoNumber: "AMS"
+        }
+      }
+      displayAlign: "left"
+    });
+    MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+        return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+    });
+    MathJax.Hub.Configured();
+  </script>
+</head>
+<body>
+
+<h1>Answer 6</h1>
+以下の図を行列の積を用いて表せ。
+注 ... "x_a"は$x_{a}$を表している(例: x_0 => $x_{0}$、q_12 → $q_{12}$)
+<ol>
+<li></li>
+  <img src="../resources/6-1.png", title="6-1">
+  <br>
+  $
+  \left(
+  \begin{array}{l}
+  q_{11} & q_{21} & q_{31} \\
+  q_{12} & q_{22} & q_{32} \\
+  \end{array}
+  \right)
+  \left(
+  \begin{array}{}
+  x_1 \\
+  x_2 \\
+  x_3
+  \end{array}
+  \right)
+  =
+  \left(
+  \begin{array}{}
+  y_1 \\
+  y_2
+  \end{array}
+  \right)
+  $
+<li></li>
+  <img src="../resources/6-2.png", title="6-2">
+  <br>
+  $
+  \left(
+  \begin{array}{l}
+  q_{11} & q_{21} & q_{31} & q_{41} \\
+  q_{12} & q_{22} & q_{32} & q_{42} \\
+  q_{13} & q_{23} & q_{33} & q_{43}
+  \end{array}
+  \right)
+  \left(
+  \begin{array}{}
+  x_1 \\
+  x_2 \\
+  x_3 \\
+  x_4
+  \end{array}
+  \right)
+  =
+  \left(
+  \begin{array}{}
+  y_1 \\
+  y_2 \\
+  y_3
+  \end{array}
+  \right)
+  $
+<li></li>
+  <img src="../resources/6-3.png", title="6-3">
+  <br>
+  $
+  \left(
+  \begin{array}{l}
+  q_{11} & q_{21} \\
+  q_{12} & q_{22} \\
+  q_{13} & q_{23}
+  \end{array}
+  \right)
+  \left(
+  \begin{array}{}
+  x_1 \\
+  x_2
+  \end{array}
+  \right)
+  =
+  \left(
+  \begin{array}{}
+  y_1 \\
+  y_2 \\
+  y_3
+  \end{array}
+  \right)
+  $
+<li></li>
+  <img src="../resources/6-4.png", title="6-4">
+  <br>
+  $
+  \left(
+  \begin{array}{l}
+  q_{11} & q_{12} & q_{13} & q_{14} \\
+  \end{array}
+  \right)
+  \left(
+  \begin{array}{}
+  x_1 \\
+  x_2 \\
+  x_3 \\
+  x_4
+  \end{array}
+  \right)
+  =
+  y_1
+  $
+<li></li>
+  <img src="../resources/6-5.png", title="6-5">
+  <br>
+  $
+  \left(
+  \begin{array}{l}
+  w_{11} & w_{21} & w_{31} \\
+  w_{12} & w_{22} & w_{32} \\
+  \end{array}
+  \right)
+  \left(
+  \begin{array}{l}
+  q_{11} & q_{21} & q_{31} & q_{41} \\
+  q_{12} & q_{22} & q_{32} & q_{42} \\
+  q_{13} & q_{23} & q_{33} & q_{43}
+  \end{array}
+  \right)
+  \left(
+  \begin{array}{}
+  x_1 \\
+  x_2 \\
+  x_3 \\
+  x_4
+  \end{array}
+  \right)
+  =
+  \left(
+  \begin{array}{}
+  y_1 \\
+  y_2
+  \end{array}
+  \right)
+  $
+</ol>
+</body>
+</html>

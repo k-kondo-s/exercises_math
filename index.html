@@ -1,7 +1,21 @@
 <DOCTYPE html>
 <html>
 <head>
-  <title>Exercises Math</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Math Exercises</title>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+      processEscapes: true
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    }
+  });
+  </script>
   <script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript"></script>
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
   <script type="text/javascript">
@@ -10,6 +24,13 @@
       tex2jax: {
         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
       }
+      TeX: {
+        TagSide: "left"
+        equationNumbers: {
+          autoNumber: "AMS"
+        }
+      }
+      displayAlign: "left"
     });
     MathJax.Hub.Queue(function() {
       $(MathJax.Hub.getAllJax()).map(function(index, elem) {
@@ -20,8 +41,21 @@
   </script>
 </head>
 <body>
-
-
-
+<h1>Math Exercises</h1>
+source: <a href="https://github.com/kenchaaan/exercises_math/tree/master">https://github.com/kenchaaan/exercises_math</a>
+<h2>Exercises</h2>
+<li><a href="exercises/exercise1.html">exercise1</a></li>
+<li><a href="exercises/exercise2.html">exercise2</a></li>
+<li><a href="exercises/exercise3.html">exercise3</a></li>
+<li><a href="exercises/exercise4.html">exercise4</a></li>
+<li><a href="exercises/exercise5.html">exercise5</a></li>
+<li><a href="exercises/exercise6.html">exercise6</a></li>
+<h2>Answers</h2>
+<li><a href="answers/answer1.html">answer1</a></li>
+<li><a href="answers/answer2.html">answer2</a></li>
+<li><a href="answers/answer3.html">answer3</a></li>
+<li><a href="answers/answer4.html">answer4</a></li>
+<li><a href="answers/answer5.html">answer5</a></li>
+<li><a href="answers/answer6.html">answer6</a></li>
 </body>
 </html>
